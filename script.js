@@ -6,9 +6,9 @@ function Person(name, age) {
 }
 
 function Employee(name, age, jobTitle) {
-	Person(name, age)
+	const info = new Person(name, age)
 	jobGreet(){
-		console.log("Hello, my name is "+this.name+" ,I am "+this.age+" years old, and my job title is "+this.jobTitle)
+		console.log("Hello, my name is "+info.name+" ,I am "+info.age+" years old, and my job title is "+this.jobTitle)
 	}
 }
 
